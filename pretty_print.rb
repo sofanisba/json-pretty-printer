@@ -8,7 +8,7 @@ finish = gets.chomp
 
 begin
   input = File.read(start)
-  json = JSON.parse(measures)
+  json = JSON.parse(input)
 
   output = File.open(finish, 'w')
   output.write(JSON.pretty_generate(json))
